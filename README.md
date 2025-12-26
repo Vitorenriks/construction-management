@@ -33,7 +33,31 @@ The focus is on **practical workflow**, clarity, and simplicity.
 ---
 
 ## 🧩 System Flow (Simplified)
-
 ```text
 User Action → Flask Route → Database (SQLite)
              → Flash Message → Redirect → Dashboard
+```
+---
+
+## 🗂️ Project Structure
+```text
+project/
+├── app.py              # Main Flask application
+├── database.db         # SQLite database
+├── requirements.txt    # Project dependencies
+├── templates/          # HTML templates (Jinja2)
+│   ├── layout.html
+│   ├── dashboard.html
+│   ├── create_work.html
+│   └── edit_work.html
+├── static/             # Static files
+│   └── style.css
+```
+---
+
+## ▶️ How to Run the Project
+
+```bash
+pip install -r requirements.txt
+flask run
+
