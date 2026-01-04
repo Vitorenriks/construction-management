@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}Edit Work{% endblock %}
+
+{% block content %}
+<h2>Edit Work</h2>
+
+{% if error %}
+    <p style="color:red;">{{ error }}</p>
+{% endif %}
+
+<form method="post">
+    <label>Work Name:</label><br>
+    <input type="text" name="name" value="{{ work.name }}"><br><br>
+
+    <label>Client:</label><br>
+    <input type="text" name="client" value="{{ work.client }}"><br><br>
+
+    <label>Start Date:</label><br>
+    <input type="date" name="start_date" value="{{ work.start_date }}"><br><br>
+
+    <label>Status:</label><br>
+    <select name="status">
+        <option value="In Progress" {% if work.status == "In Progress" %}selected{% endif %}>
+            In Progress
+        </option>
+        <option value="Completed" {% if work.status == "Completed" %}selected{% endif %}>
+            Completed
+        </option>
+    </select><br><br>
+
+    <button type="submit">Save Changes</button>
+</form>
+{% endblock %}

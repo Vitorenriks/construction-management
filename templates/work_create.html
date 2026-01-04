@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}Create Work{% endblock %}
+
+{% block content %}
+<h2>Create New Work</h2>
+
+{% if error %}
+    <p style="color: red;">{{ error }}</p>
+{% endif %}
+
+<form method="post">
+    <label for="name">Work Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="client">Client:</label><br>
+    <input type="text" id="client" name="client"><br><br>
+
+    <label for="start_date">Start Date:</label><br>
+    <input type="date" id="start_date" name="start_date"><br><br>
+
+    <label for="status">Status:</label><br>
+    <select id="status" name="status">
+        <option value="In Progress">In Progress</option>
+        <option value="Completed">Completed</option>
+    </select><br><br>
+
+    <button type="submit">Create Work</button>
+</form>
+{% endblock %}

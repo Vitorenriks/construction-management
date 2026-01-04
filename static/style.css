@@ -1,0 +1,98 @@
+/* General layout */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+h1, h2 {
+    color: #333333;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Delete button */
+form button {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+/* Forms */
+label {
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+
+/* Error messages */
+p {
+    color: #333;
+}
+.flash-messages {
+    list-style: none;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #e6fffa;
+    border: 1px solid #38b2ac;
+    color: #065f46;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <title>{% block title %}Construction Management System{% endblock %}</title>
+</head>
+<body>
+
+    <header class="container">
+        <h1>Construction Management System</h1>
+        <p>Simple control of projects, materials, and costs</p>
+        <hr>
+    </header>
+
+    <main class="container">
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="flash-messages">
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+
+</main>
+
+
+</body>
+
+</html>
