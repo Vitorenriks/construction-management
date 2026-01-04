@@ -1,25 +1,19 @@
-# Python cache
+# Python
 __pycache__/
 *.pyc
-*.pyo
 
 # Virtual environment
 venv/
-env/
-.venv/
-
-# Flask
-instance/
-*.log
+.env
 
 # Database
 *.db
+*.sqlite3
 
-# OS files
+# Flask
+instance/
+
+# OS
 .DS_Store
-Thumbs.db
 
-# IDE / Editor
-.vscode/
-.idea/
 

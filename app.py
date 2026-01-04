@@ -8,7 +8,6 @@ app.secret_key = "cs50-final-project"
 
 DATABASE = "works.db"
 
-
 def get_db_connection():
     """
     Create and return a database connection.
